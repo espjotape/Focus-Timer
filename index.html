@@ -1,0 +1,100 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer 2.0</title>
+
+    <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-svg">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" defer src="./src/main.js" ></script>
+  </head>
+  <body>
+    <div id="container">
+      <main id="timer">
+        <span id="minutes" class="number">00</span>
+        <span class="number">:</span>
+        <span id="seconds" class="number">00</span>
+
+        <div id="controls">
+          <button 
+            id="play"
+            class="play">
+            <img 
+            data-action="togglePlay"
+            src="./assets/icons/play.svg" alt="icon play cronometro">
+            <span class="sc-only">Iniciar Contador</span>
+          </button>
+          <button
+            id="pause"  
+            class="pause">
+            <img 
+            data-action="togglePause"
+            src="./assets/icons/pause.svg" alt="icon pausar cronometro">
+            <span class="sc-only">Pausar Contador</span>
+          </button>
+          <button>
+            <img 
+            id="stop"
+            data-action="toggleStop"
+            src="./assets/icons/stop.svg" alt="icon pausar cronometro">
+            <span class="sc-only">Parar Contador</span>
+          </button>
+          <button>
+            <img
+            id="plus"
+            data-action="IncreaseFive"
+            src="./assets/icons/more.svg" alt="icon aumentar cronometro">
+            <span class="sc-only">Aumentar 5 Minutos do contador</span>
+          </button>
+          <button>
+            <img 
+            id="minus"
+            data-action="toDecreaseFive"
+            src="./assets/icons/less.svg" alt="icon diminuir cronometro">
+            <span class="sc-only">Diminuir 5 Minutos do contador</span>
+          </button>
+        </div>
+      </main>
+
+      <aside id="controlsSounds">
+        <button 
+          data-action="toggleMusicForest"
+          class="sound-forest box"
+          id="sound-forest">
+          <img
+          data-action="toggleMusic"
+          src="./assets/icons/florest.svg" alt="icone som floresta">
+        </button>
+        <button 
+          data-action="toggleMusic"
+          class="sound-rain box"
+          id="sound-rain" 
+          >
+          <img
+          data-action="toggleMusic"
+          src="./assets/icons/clound.svg" alt="icone tocar som de chuva">
+          
+        </button>
+        <button
+          data-action="toggleMusic"
+          class="sound-coffe box"
+          id="sound-coffe"      
+          >
+          <img
+          data-action="toggleMusic"
+          src="./assets/icons/canteen.svg" alt="icone tocar som de cafeteria">
+        </button>
+        <button
+          data-action="toggleMusic"  
+          class="sound-fireplace box"
+          id="sound-fireplace">
+          <img 
+          data-action="toggleMusic"
+          src="./assets/icons/fireplace.svg" alt="icone tocar som de lareira">
+        </button>
+      </aside>
+    </div>
+  </body>
+  </html>
